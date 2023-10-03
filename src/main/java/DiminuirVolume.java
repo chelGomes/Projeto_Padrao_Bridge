@@ -1,8 +1,13 @@
-public abstract class DiminuirVolume extends DispositivoEletronico{
+public class DiminuirVolume extends DispositivoEletronico{
   private int volume;
 
   public DiminuirVolume(int nivelVolume){
     super(nivelVolume);
+  }
+
+  @Override
+  public int ajusteDispositivo() {
+    return 0;
   }
 
   public void setVolume(int volume) {
